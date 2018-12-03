@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Analyzer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+        <div class="header">
+            <a href="#default" class="logo">Network Analyzer</a>
+        </div>
+    <div class="container">
+        <p>Załaduj twoją sieć w formacie .json i naciśnij przycisk "import" lub wpisz twoją sieć ręcznie po czym naciśnij przycisk "wyślij" aby wysłać twój plik do aplikacji i odblokować panel obliczeń</p>
+        <input type="file" id="selectFiles" value="Import" /><br />
+        <div>
+            <button id="import">Import</button>
+            <button id="send">Wyślij</button>
+        </div>
+        
+        <textarea id="result"></textarea>
+        
+    </div>
+    <div class="container invisible">
+            <p>2 ekran</p>
+            <input type="file" id="selectFiles2" value="Import" /><br />
+            <div>
+                <button id="import2">Import</button>
+                <button id="send2">Wyślij</button>
+            </div>
+            
+            <textarea id="result2"></textarea>
+            
+        </div>
+    <footer>
+        <ul>
+            <li>Dominik Grzelak</li>
+            <li>Mateusz Wiśniewski</li>
+            <li>Kacper Maciejewski</li>
+            <li>Paweł Myszkowski</li>
+        </ul>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
